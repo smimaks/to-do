@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #eee;
+}
+
+.modal-container {
+   
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.342);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    visibility: visible;
+
+}
+.hide {
+      visibility: hidden;
+}
+
+.modal-content {
+    outline: 3px solid orange;
+    height: 200px;
+    width: 450px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.modal-content p {
+    font-size: 25px;
+
+}
+.close-modal {
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-modal img{
+    height: 30px;
+    width: 30px;
+}
+
+.close-modal:hover {
+    cursor: pointer;
+    opacity: .5;
+    transition: .3s;
+
+}
+
+.close-task{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: transparent;
+
+}
+.close-task img{
+    width: 25px;
+    height: 25px;
+
+}
+
+.close-task img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.top-title {
+    padding: 15px 0;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 3px solid orange;
+}
+
+.tasks {
+    box-shadow: darkgrey 0 0 20px 1px;
+    font-size: 25px;
+    resize: none;
+}
+
+.title-err {
+    color: red;
+}
+
+label {
+    margin: 10px 0;
+    display: block;
+}
+
+.inputs {
+    margin-left: 120px;
+}
+
+#date {
+    display: block;
+}
+
+.btns {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-container {
+    width: 100%;
+    outline: 3px solid blue;
+    margin: 50px 100px 0 0;
+    display: flex;
+}
+
+
+
+
+
+.task-edit-field {
+    display: block;
+}
+
+.text-task {
+    width: 300px;
+    height: 150px;
+}
+
+.new-task {
+    margin: 20px 0;
+    outline: 1px solid green;
+
+}
+
+
+.err {
+
+    box-shadow: 0 0 8px red;
+}

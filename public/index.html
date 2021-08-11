@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>ToDoList</title>
+</head>
+
+<body>
+
+    <div class="modal-container hide">
+        <div class="modal-content">
+            <button class="close-modal"><img src="closeKrestik.svg" alt="closeButton"></button>
+            <p>Задача успешно поставлена!</p>
+        </div>
+    </div>
+
+    <header>
+        <h1 class="top-title">To Do List</h1>
+    </header>
+    <main>
+        <section class="task-fields">
+            <div class="container">
+                <div class="task-list">
+                
+                    <div class="inputs">
+                          <p class="title-err"></p>
+                        <label class="title">
+                            Название задачи: <br><br>
+                            <input type="text" name="title" id="task-title">
+                        </label>
+                        <label class="title">
+                            <input type="radio" name="priority" value="Сверхъважно!!!" class="soHigh" id="time" checked>
+                            Сверхъважно
+                        </label>
+
+                        <label class="title">
+                            <input type="radio" name="priority"  class="high" value="Важно!!" id="time">
+                            Важно
+                        </label>
+                        <label class="title">
+
+                            <input type="radio" name="priority" class="midle" value="Средняя важность!" id="time">
+                            Средняя важность
+                        </label>
+                         <p class="title-err"></p>
+                        <label>
+                             Выполнить до:
+                            <input type="date" name="date" id="date" >
+                        </label>
+
+                  
+                    <p class="title-err"></p>
+                    <label for="text">
+                    <textarea name="text" id="text" cols="30" rows="10" class="task"></textarea></label>
+                    </div>
+                    <div class="btns">
+                        <button type="button" id="btn">Поставить задачу</button>
+                        <button type="button" id="check-tasks">Текущие задачи</button>
+                        <button id="completed-tasks">Выполненые задачи</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="created-task"></section>
+        <div class="list-container">
+            <div class="to-do"></div>
+            <div class="completed"></div>
+        </div>
+
+    </main>
+    <script src="./main.js"></script>
+    <script src="./initEvents.js"></script>
+   
+</body>
+
+</html>
